@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        div {
+            background-color: bisque;
+            height:150px;
+            border: 1px solid red;
+            margin-bottom: 5px;
+        }
+        .static {
+            position: static;
+        }
+        .relative {
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+        .absolute {
+            position: absolute;
+            left: 60px;
+            top: 40px;
+            height: 50px;
+            width: 300px;
+            background-color: rgb(32, 79, 249);
+        }
+        .fixed {
+            position: fixed;
+            bottom: 0px;
+            right:0px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(220, 58, 58);
+        }
+        .sticky {
+            position: sticky;
+            top: 0px;
+            height: 30px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Positioning</h1>
+    <div class="sticky">Sticky DIV</div>
+    <h2>There are 5 types of Positioning</h2>
+    <ul>
+        <li>Static</li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ul>
+    <div class="static">
+        This is a Static DIV
+    </div>
+    <div class="relative">
+        This is a Relative DIV
+        <div class="absolute">
+            This is an Absolute DIV
+        </div>
+    </div>
+    <div class="fixed">
+        FIXED
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt, autem quis architecto mollitia dolorum iste? Animi minus velit quia error alias, veniam harum fugiat vero commodi eaque perspiciatis exercitationem!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt, autem quis architecto mollitia dolorum iste? Animi minus velit quia error alias, veniam harum fugiat vero commodi eaque perspiciatis exercitationem!
+    </p>
+
+</body>
+</html>

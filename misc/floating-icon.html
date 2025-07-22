@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Help Icon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+        }
+
+        .help-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0d6efd;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .help-icon:hover {
+            background-color: #084298;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to Our Website</h1>
+    <p>This is a sample page with a floating help icon.</p>
+
+    <!-- Floating Help Icon -->
+    <div class="help-icon" title="Need Help?">
+        <i class="bi bi-question-circle-fill"></i>
+    </div>
+
+</body>
+
+</html>
