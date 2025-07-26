@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(242, 247, 247);
+            padding: 25px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .contact-form {
+            width: 450px;
+            border: 2px solid rgb(96, 93, 93);
+            margin: auto;
+            border-radius: 6px;
+            box-shadow: 4px 4px 4px gray;
+            padding: 30px;
+            background-color: white;
+        }
+
+        label {
+            color: rgb(58, 26, 200)
+        }
+
+        .form-control {
+            width: 400px;
+            margin-top: 10px;
+        }
+
+        button {
+            width: 400px;
+            height: 30px;
+            margin-top: 20px;
+            background-color: rgb(13, 13, 109);
+            color: white;
+        }
+
+        button:hover {
+            background-color: rgb(10, 10, 217);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Contact Form</h2>
+    <form class="contact-form">
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" name="fullName" id="fullName" class="form-control"
+            placeholder="Enter your full name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email ID"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" rows="10" class="form-control"
+            placeholder="Enter your message that you want to send"></textarea>
+
+        <button>Send Message</button>
+
+    </form>
+</body>
+
+</html>
