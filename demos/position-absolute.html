@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Absolute Position Example</title>
+  <style>
+    .container {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      background-color: #f2f2f2;
+      margin: 50px auto;
+      border: 1px solid #ccc;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="absolute-box">
+      Positioned inside container
+    </div>
+    <p style="padding: 20px;">This is the container.</p>
+  </div>
+
+</body>
+</html>
