@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Units Demo</title>
+    <style>
+      :root {
+        font-size: 16px; /* 1rem = 16px */
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      .px-box {
+        width: 200px;
+        height: 100px;
+        background-color: #f0a;
+        margin-bottom: 15px;
+      }
+
+      .em-box {
+        font-size: 1.5em; /* 1.5 times the parent font size */
+        padding: 1em;
+        background-color: #0af;
+        width: 20em; /* 20 * 16px*/
+        margin-bottom: 15px;
+      }
+
+      .rem-box {
+        font-size: 1.2rem; /* 1.2 times root (html) font size */
+        padding: 1rem;
+        background-color: #afa;
+        width: 25rem;
+        margin-bottom: 15px;
+      }
+
+      .percent-box {
+        width: 50%;
+        height: 50px;
+        background-color: #ffa500;
+      }
+
+      .container {
+        width: 400px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Units Demonstration</h2>
+
+    <div class="px-box">Fixed size using <strong>px</strong> (200px width)</div>
+
+    <div class="em-box">
+      Relative size using <strong>em</strong> (1.5em text, 1em padding)
+    </div>
+
+    <div class="rem-box">
+      Relative size using <strong>rem</strong> (1.2rem text, 1rem padding)
+    </div>
+
+    <div class="container">
+      <div class="percent-box">
+        Width set to <strong>80%</strong> of container (400px)
+      </div>
+    </div>
+  </body>
+</html>
