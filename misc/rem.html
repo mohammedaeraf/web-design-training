@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>REM Unit Demo</title>
+    <style>
+        :root {
+            font-size: 50px;
+            /* This sets the base for rem (1rem = 16px) */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            /* 2 × 16 = 32px */
+        }
+
+        p {
+            font-size: 1rem;
+            /* 1 × 16 = 16px */
+        }
+
+        .box {
+            width: 20rem;
+            /* 20 × 16 = 320px */
+            padding: 1rem;
+            /* 16px padding on all sides */
+            background-color: #e0f7fa;
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Using rem Units</h1>
+    <p>This paragraph has a font size of 1rem, which is equal to 16px.</p>
+
+    <div class="box">
+        This box is 20rem wide (320px) with 1rem (16px) padding inside.
+    </div>
+
+</body>
+
+</html>

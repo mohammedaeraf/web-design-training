@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Percentage Units Demo</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #e0b0b0;
+            padding: 20px;
+            border: 1px solid #8e0101;
+        }
+
+        h2 {
+            font-size: 300%;
+        }
+
+        .box {
+            width: 50%;
+            /* 50% of container's width */
+            height: 100px;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px auto;
+        }
+
+        .text-small {
+            font-size: 80%;
+            /* 80% of the parent font size */
+        }
+
+        .text-large {
+            font-size: 120%;
+            /* 120% of the parent font size */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Using % Units</h2>
+
+        <div class="box">50% Width Box</div>
+
+        <p class="text-small">This text is 80% of the default font size.</p>
+        <p class="text-large">This text is 120% of the default font size.</p>
+    </div>
+
+</body>
+
+</html>
