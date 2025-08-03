@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS display property</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 {
+        color: orangered;
+        margin-top: 20px;
+      }
+      .box {
+        border: 2px solid gray;
+        margin: 5px;
+        padding: 10px;
+        background-color: aliceblue;
+      }
+      .block {
+        display: block;
+        background-color: burlywood;
+      }
+      .inline {
+        display: inline;
+        background-color: cadetblue;
+        padding: 5px;
+        margin: 10px;
+        /* width: 500px; */
+      }
+      .inline-block {
+        display: inline-block;
+        background-color: darkkhaki;
+        width: 450px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS display property</h2>
+
+    <h3>1. Block Elements</h3>
+    <div class="box block">Block Element 1</div>
+    <div class="box block">Block Element 2</div>
+    <p>Takes full width and starts on a new line</p>
+
+    <h3>2. Inline Elements</h3>
+    <p class="box inline">Inline Element 1</p>
+    <p class="box inline">Inline Element 2</p>
+    <p>Takes only the space need; Width and Height can be set</p>
+
+    <h3>3. Inline-Block Elements</h3>
+    <div class="box inline-block">Inline-Block Element 1</div>
+    <div class="box inline-block">Inline-Block Element 2</div>
+    <p>Takes only the space need; Width and Height can be set</p>
+  </body>
+</html>
