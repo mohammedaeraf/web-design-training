@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Display Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        .demo-box {
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid #333;
+            box-sizing: border-box;
+        }
+
+        .block {
+            display: block;
+            width: 100%;
+            background-color: #a8dadc;
+        }
+
+        .inline {
+            display: inline;
+            background-color: #f4a261;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 150px;
+            background-color: #90be6d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS <code>display</code> Property Demo</h1>
+
+    <h2>1. Block (default for &lt;div&gt;)</h2>
+    <div class="demo-box block">Block Element 1</div>
+    <div class="demo-box block">Block Element 2</div>
+    <p>✅ Takes full width and starts on a new line.</p>
+
+    <h2>2. Inline (default for &lt;span&gt;)</h2>
+    <span class="demo-box inline">Inline 1</span>
+    <span class="demo-box inline">Inline 2</span>
+    <p>✅ Flows with text. Width and height cannot be set.</p>
+
+    <h2>3. Inline-block</h2>
+    <div class="demo-box inline-block">Inline-block 1</div>
+    <div class="demo-box inline-block">Inline-block 2</div>
+    <p>✅ Flows inline <em>but</em> allows width, height, margin, and padding.</p>
+
+</body>
+
+</html>
