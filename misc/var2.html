@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables Example</title>
+    <style>
+        /* Defining CSS Variables */
+        :root {
+            --primary-color: orangered;
+            --secondary-color: #ffffff;
+            --text-color: #291ad3;
+            --button-bg: rgb(181, 52, 5);
+            --button-hover: orangered;
+            --font-size: 30px;
+        }
+
+        /* Applying Variables */
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+            font-size: var(--font-size);
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 20px;
+        }
+
+        button {
+            background-color: var(--button-bg);
+            color: var(--secondary-color);
+            border: none;
+            padding: 10px 20px;
+            font-size: var(--font-size);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: var(--button-hover);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <main>
+        <p>This is an example of using CSS variables.</p>
+        <button>Click Me</button>
+        <p>This is an example of using CSS variables.</p>
+        <button>Second Button</button>
+        <p>This is an example of using CSS variables.</p>
+        <button>Third Button</button>
+    </main>
+</body>
+
+</html>

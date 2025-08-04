@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Variables Demo</title>
+    <style>
+        :root {
+            --main-color: #3498db;
+            --text-color: white;
+            --padding: 10px;
+        }
+
+        .box {
+            background-color: var(--main-color);
+            color: var(--text-color);
+            padding: var(--padding);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">This box uses CSS Variables</div>
+
+</body>
+
+</html>
