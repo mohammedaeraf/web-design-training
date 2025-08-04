@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+      :root {
+        --heading-color: orangered;
+        --text-color: rgb(4, 90, 11);
+      }
+
+      h1 {
+        color: var(--heading-color);
+      }
+
+      p {
+        color: var(--text-color);
+      }
+
+      ul {
+        color: var(--text-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Variables Demo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi
+      temporibus minima necessitatibus, omnis mollitia atque esse, rerum
+      doloribus officia tempora modi unde nesciunt natus sint similique illo
+      nobis alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+      a obcaecati deserunt accusantium quas error rerum ea doloribus voluptatum
+      ratione at debitis, amet consectetur impedit corrupti nam neque minus in?
+    </p>
+
+    <h2>Another Heading</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, doloribus
+      minus? Saepe reiciendis natus illum ratione et animi, reprehenderit nobis
+      veritatis sapiente! Expedita ducimus incidunt corrupti placeat minima,
+      unde porro!
+    </p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </body>
+</html>
