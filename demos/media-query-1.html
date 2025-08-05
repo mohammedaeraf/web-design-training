@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      body {
+        background-color: orangered;
+        font-family: Arial;
+      }
+      h1 {
+        font-size: 50px;
+        padding: 15px;
+      }
+
+      @media (max-width: 992px) {
+        body {
+          /* background-color: blue; */
+        }
+        h1 {
+          font-size: 32px;
+          padding: 10px;
+          color: white;
+        }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 24px;
+          color: darkgreen;
+          padding: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Query Demo</h1>
+  </body>
+</html>
