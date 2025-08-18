@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Video Demo</title>
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="bg-light">
-
+  <body class="bg-light">
     <div class="container py-5">
-        <h2 class="text-center mb-4">Video Gallery</h2>
+      <h2 class="text-center mb-4">Video Gallery</h2>
 
-        <div class="row g-4">
-
-            <!-- Video 1 (YouTube) -->
-            <div class="col-md-6">
-                <div class="card shadow">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://youtube.com/embed/IZrb7B5RVn0" title="Asia's cleanest village"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">YouTube Video</h5>
-                        <p class="card-text">This video is embedded from YouTube.</p>
-                    </div>
-                </div>
+      <div class="row g-4">
+        <!-- Video 1 (YouTube) -->
+        <div class="col-md-6">
+          <div class="card shadow">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://youtube.com/embed/9fJEFi3ccwI"
+                title="Yosemite National Park"
+                allowfullscreen
+              ></iframe>
             </div>
-
-            <!-- Video 2 (Local MP4) -->
-            <div class="col-md-6">
-                <div class="card shadow">
-                    <div class="ratio ratio-16x9">
-                        <video controls poster="img/miracle-garden.avif">
-                            <source src="vid/miracle-garden.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Local MP4 Video</h5>
-                        <p class="card-text">This video is loaded from a local file.</p>
-                    </div>
-                </div>
+            <div class="card-body">
+              <h5 class="card-title">YouTube Video</h5>
+              <p class="card-text">This video is embedded from YouTube.</p>
             </div>
-
+          </div>
         </div>
+
+        <!-- Video 2 (Local MP4) -->
+        <div class="col-md-6">
+          <div class="card shadow">
+            <div class="ratio ratio-16x9">
+              <video controls poster="img/newyork.jpg">
+                <source src="vid/miracle-garden.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Local MP4 Video</h5>
+              <p class="card-text">This video is loaded from a local file.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap JS (Optional for components like modals) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
